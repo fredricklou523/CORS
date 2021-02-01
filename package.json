@@ -1,0 +1,34 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx babel . --out-dir compiled --presets=@babel/preset-react --ignore=node_modules,compiled --source-maps inline --watch",
+    "same-server": "nodemon server/index.js",
+    "different-server": "liver-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1 ",
+    "lodash": "^4.17.20",
+    "nodemon": "^2.0.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.1",
+    "chai": "^4.2.0",
+    "live-server": "^1.2.1",
+    "mocha": "^8.2.1",
+    "react-test-renderer": "^16.14.0",
+    "sinon": "^9.2.1"
+  }
+}
